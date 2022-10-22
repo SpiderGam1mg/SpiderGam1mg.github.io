@@ -132,12 +132,19 @@
     function accelerate(n) {
         myGamePiece.gravity = n;
     }
+
+    window.onkeydown= function(gfg){
+        if(gfg.keyCode === space_bar){
+            accelerate(-0.2)
+        }
+    }
     </script>
-    <br>
-    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-    <p> Hi I'm Aswad and this my website!</p>
     
     <body>
+        <br>
+        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">CLICK HERE OR SPACE TO accelerate</button>
+        <p> Hi I'm Aswad and this my website!</p>
+        
         <p> press the button to go in the air </p>
     </body>
 </html>
